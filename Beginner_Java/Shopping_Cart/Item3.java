@@ -9,31 +9,33 @@ package ex12;
  *
  * @author Elphas
  */
-public class Item {
-     private int id;
+public class Item3 {
+    private int id;
     private String desc;
     private double price;
     static int nextId = 1;
     
-    public Item(){
-    // set default values
+    // Default constructor sets default values
+    public Item3(){
         setId();
         setDesc("No description assigned.");
         setPrice(0.00);
     }
     
-    public Item(String desc, double price) {
+    // Overloaded constructor takes description and price
+    public Item3(String desc, double price) {
         setId();
         setDesc(desc);
         setPrice(price);
     }
-
+    
     public void display(){
         System.out.println("Item description: "+getDesc());
         System.out.println("\tID: "+getId());
         System.out.println("\tPrice: "+getPrice());
     }
 
+    // Getter and Setter methods
     private void setId() {
         id = Item.nextId++;
     }
@@ -56,6 +58,5 @@ public class Item {
 
     private void setPrice(double price) {
         this.price = price;
-    }    
-    
+    }
 }
