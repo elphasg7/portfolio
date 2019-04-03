@@ -1,0 +1,35 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#Checkout {
+    height: 10%;
+    width: 25%;
+    background: grey;
+    border-color: crimson;
+    border-radius: 20px;
+    font-size: 300%;
+    font-family: Verdana;
+}
+
+body {
+    font-family: Verdana;
+}
+
+#total {
+    font-size: 100%;
+    font-weight: bold;
+}
